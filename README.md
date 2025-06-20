@@ -5,7 +5,7 @@ An intelligent web application built with Streamlit that estimates individual he
 ---
 
 ## 🌐 Live Website
-You can try the tool live here: **[Health Insurance Premium Predictor]https://vaibhav-project-premium-prediction.streamlit.app/**
+You can try the tool live here: **[Health Insurance Premium Predictor](https://vaibhav-project-premium-prediction.streamlit.app/)**
 
 ---
 
