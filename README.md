@@ -2,6 +2,8 @@
 
 An intelligent web application built with Streamlit that estimates individual health insurance premiums based on demographic, lifestyle, and medical inputs. By using separate regression models for different age segments, it delivers more tailored and accurate predictions.
 
+---
+
 ## 🛠 Features  
 - Interactive and clean Streamlit interface  
 - Predicts premium cost based on user inputs like age, BMI, smoking status, income, etc.  
@@ -12,23 +14,7 @@ An intelligent web application built with Streamlit that estimates individual he
 - Lightweight, fast, and easy to run locally
 - No database or backend server required
 
-## 🚀 How to Run Locally  
-### Prerequisites:  
-- Python 3.8+
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/vaibhavgarg2004/Health-Insurance-Premium-Predictor.git
-   cd Health-Insurance-Premium-Predictor
-   ```
-2. **Install dependencies**:   
-   ```commandline
-    pip install -r requirements.txt
-   ```
-5. **Run the Streamlit app**:   
-   ```commandline
-    streamlit run main.py
-   ```
+---
 
 ## 📂 Project Structure
 
@@ -48,10 +34,65 @@ Health_Insurance_Cost_Predictor/
 └── requirements.txt                # Python dependencies
 ```
 
+---
+
+## 🚀 How to Run Locally  
+### Prerequisites:  
+- Python 3.8+
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/vaibhavgarg2004/Health-Insurance-Premium-Predictor.git
+   cd Health-Insurance-Premium-Predictor
+   ```
+2. **Install dependencies**:   
+   ```commandline
+    pip install -r requirements.txt
+   ```
+5. **Run the Streamlit app**:   
+   ```commandline
+    streamlit run main.py
+   ```
+
+---
+
+## 🧠 How It Works
+
+1. **User Inputs**  
+   - **Age** (years)  
+   - **Number of Dependents**  
+   - **Income in Lakhs**  
+   - **Genetical Risk** (0 = none, 1 = low, 2 = moderate, 3 = high)  
+   - **Insurance Plan** (e.g., Bronze, Silver, Gold)  
+   - **Employment Status** (e.g., Salaried, Self-Employed, Unemployed)  
+   - **Gender** (Male/Female)  
+   - **Marital Status** (Married/Unmarried)  
+   - **BMI Category** (Underweight, Normal, Overweight, Obese)  
+   - **Smoking Status** (No Smoking / Smoker)  
+   - **Region** (Northeast, Northwest, Southeast, Southwest)  
+   - **Medical History** (No Disease / Has Disease)  
+
+2. **Segmentation Logic**  
+   - **Age <= 25** → Uses **`scaler_young.joblib`** and **`model_young.joblib`** (Linear Regression).
+   - **Age > 25** → Uses **`scaler_rest.joblib`** and **`model_rest.joblib`** (XGBoost Regressor).
+
+3. **Prediction Flow**  
+   - Input data is preprocessed using the respective scaler.  
+   - Features are passed to the appropriate model.  
+   - The predicted premium cost is returned instantly.
+
+---
+   
 ## 🖼️ Application Snapshot
 
 ![Application UI](insurance_predictor_ui_mockup.png)
 
 ---
-Built with ❤️ using Streamlit, Scikit-learn, and XGBoost
+
+## 📄 License
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+*Don’t guess—predict. Discover your insurance premium with smart insights.*
 
