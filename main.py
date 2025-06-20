@@ -93,6 +93,6 @@ input_dict = {
 
 # Prediction
 st.markdown("---")
-if st.button("🧮 Predict Insurance Cost"):
+if st.button("🧮 Predict Insurance Premium"):
     prediction = predict(input_dict)
-    st.success(f"🏥 Estimated Health Insurance Cost: ₹ {prediction}")
+    st.success(f"🏥 Estimated Health Premium Cost: ₹ {prediction}")
