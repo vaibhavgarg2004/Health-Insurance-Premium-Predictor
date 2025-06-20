@@ -18,8 +18,8 @@ An intelligent web application built with Streamlit that estimates individual he
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/vaibhavgarg2004/Health Insurance Premium Predictor.git
-   cd Health Insurance Premium Predictor
+   git clone https://github.com/vaibhavgarg2004/Health-Insurance-Premium-Predictor.git
+   cd Health-Insurance-Premium-Predictor
    ```
 2. **Install dependencies**:   
    ```commandline
