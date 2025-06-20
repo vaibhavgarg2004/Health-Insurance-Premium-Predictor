@@ -3,7 +3,7 @@
 import streamlit as st
 from prediction_helper import predict
 
-st.set_page_config(page_title="Health Insurance Cost Predictor", page_icon="💰", layout="centered")
+st.set_page_config(page_title="Health Insurance Premium Predictor", page_icon="💰", layout="centered")
 
 # Title and styling
 st.markdown("""
@@ -17,7 +17,7 @@ st.markdown("""
             overflow: hidden;
             text-overflow: ellipsis;
         ">
-            💼 Health Insurance Cost Predictor
+            💼 Health Insurance Premium Predictor
         </h1>
     </div>
 """, unsafe_allow_html=True)
