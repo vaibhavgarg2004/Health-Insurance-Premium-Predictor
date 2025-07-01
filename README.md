@@ -9,6 +9,11 @@ You can try the tool live here: **[Health Insurance Premium Predictor](https://v
 
 ---
 
+## 🎥 Presentation
+Watch the full project presentation here: **[Health Insurance Premium Predictor](https://vaibhav-projects.my.canva.site/health-insurance-premium-prediction)**
+
+---
+
 ## 🛠 Features  
 - Interactive and clean Streamlit interface  
 - Predicts premium cost based on user inputs like age, BMI, smoking status, income, etc.  
