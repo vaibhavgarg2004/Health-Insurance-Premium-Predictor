@@ -1,4 +1,4 @@
-# Health Insurance Premium Predictor
+# 💰 Health Insurance Premium Predictor
 
 An intelligent web application built with Streamlit that estimates individual health insurance premiums based on demographic, lifestyle, and medical inputs. By using separate regression models for different age segments, it delivers more tailored and accurate predictions.
 
